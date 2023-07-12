@@ -13,23 +13,51 @@ public class Crewmate
     private List<string> possibleNames = new()
     {
         "Alfred",
-        "Tim",
-        "Tam",
+        "Bulma",
+        "Human",
+        "Tom",
+        "Grace",
+        "Guy",
+        "Jose",
+        "Steven",
+        "Amina",
+        "Alice",
+        "Jenny",
+        "Fred",
+        "Stephanie",
+        "Owen",
+        "Lumiere",
+        "Bella",
+        "Josh",
+        "Laos",
+        "Frodo",
         "Maurice"
     };
     private List<string> possibleHumanHobbies = new()
     {
         "Likes to go fishing",
-        "Tim",
-        "Tam",
-        "Maurice"
+        "Likes to read",
+        "Likes to snow ski",
+        "Likes to race",
+        "Likes to date",
+        "Likes to go clubbing",
+        "Likes to watch movies",
+        "Likes to write",
+        "Likes to sleep in",
+        "Likes to drink tea"
     };
     private List<string> possibleImposterHobbies = new()
     {
-        "Alfred",
-        "Tim",
-        "Tam",
-        "Maurice"
+        "Likes to be human",
+        "Likes to eat water",
+        "Likes to sky ski",
+        "Likes to fly",
+        "Likes to drink cheese",
+        "Likes to eat hoboms",
+        "Likes dancing on the clouds",
+        "Likes to eat children",
+        "Likes to be walked by dogs",
+        "Likes watching radio",
     };
     public Crewmate()
     {

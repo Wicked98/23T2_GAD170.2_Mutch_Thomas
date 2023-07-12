@@ -13,7 +13,7 @@ public class Ship : MonoBehaviour
 
     private void Start()
     {
-        CreateCremate();
+        CreateCrewmate();
 
     }
 
@@ -22,7 +22,7 @@ public class Ship : MonoBehaviour
         Debug.Log("Hire");
         crewmates.Add(applyingCrewmate);
         applyingCrewmate = null;
-        CreateCremate();
+        CreateCrewmate();
 
     }
 
@@ -30,11 +30,11 @@ public class Ship : MonoBehaviour
     {
         Debug.Log("Reject");
         applyingCrewmate = null;
-        CreateCremate();
+        CreateCrewmate();
 
     }
 
-    public void CreateCremate()
+    public void CreateCrewmate()
     {
         applyingCrewmate = new Crewmate();
         nameText.text = applyingCrewmate.crewmateName;
