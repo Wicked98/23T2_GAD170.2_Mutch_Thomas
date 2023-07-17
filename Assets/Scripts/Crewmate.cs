@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// copying classes - right click etc
 
 [System.Serializable]
 public class Crewmate 
@@ -50,7 +49,7 @@ public class Crewmate
     {
         "Likes to be human",
         "Likes to eat water",
-        "Likes to sky ski",
+        "Likes to sleep till night",
         "Likes to fly",
         "Likes to drink cheese",
         "Likes to eat hoboms",
@@ -61,15 +60,23 @@ public class Crewmate
     };
     public Crewmate()
     {
+        // draws a random name from the list & allocates to the crewmate name variable 
         crewmateName = possibleNames[Random.Range(0, possibleNames.Count)];
+
+        // sets whether the crewmate presented is an imposter, with a 50/50 chance 
         if (Random.Range(0, 2)== 0)
         {
-            hasParasite = true; 
+            // sets they have a parasite variable  
+            hasParasite = true;
+            // sets a random hobby from the list & allocates to the imposter hobby variable 
             crewmateHobby = possibleImposterHobbies[Random.Range(0, possibleImposterHobbies.Count)];
         }
+            
             else
         {
-            hasParasite = false; 
+            // sets they don't have a parasite variable  
+            hasParasite = false;
+            // sets a random hobby from the list & allocates to the crewmate hobby variable 
             crewmateHobby = possibleHumanHobbies[Random.Range(0, possibleHumanHobbies.Count)]; 
         }
     }
